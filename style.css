@@ -1,0 +1,121 @@
+/* 基本頁面樣式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.eword {
+    font-family: Comic Sans MS, Arial;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+#comment-text {
+    white-space: normal; /* 或者不指定 white-space 屬性 */
+}
+
+/* 問題容器樣式 */
+#question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#eat-button {
+    background-color: #4caf50; /* 綠色 */
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px; /* 添加底部間距 */
+}
+
+#not-eat-button {
+    background-color: #f44336; /* 紅色 */
+    color: #fff;
+}
+
+/* 結果容器樣式 */
+#result-container {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 將內容水平和垂直居中 */
+}
+
+#response-text {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#score-text {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#comment-text {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#restart-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #008CBA; /* 藍色 */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    #question-text {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    #response-text, #score-text, #comment-text {
+        font-size: 16px;
+    }
+
+    #restart-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
