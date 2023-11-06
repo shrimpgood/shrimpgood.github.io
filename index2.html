@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你挑食嗎?</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- 引入 jQuery 库 -->
+</head>
+<body>
+    <div class="container">
+        <h1>你挑食嗎?</h1>
+        <div class="eword">
+            <h1>Are you a picky eater?</h1>
+        </div>
+        <div id="question-container">
+            <p id="question-text"></p>
+            <img id="question-image" src="" alt="這是一張圖片" max-width="100%" height="auto">
+            <button id="eat-button">吃</button>
+            <button id="not-eat-button">不吃</button>
+        </div>
+        <div id="response-container">
+            <p id="response-text"></p>
+        </div>
+        <div id="result-container">
+            <h2>結果報告</h2>
+            <p id="score-text"></p>
+            <h3>評語:</h3>
+            <p id="comment-text"></p>
+            <!-- 新增重新開始按鈕 -->
+            <button id="restart-button">重新開始</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
